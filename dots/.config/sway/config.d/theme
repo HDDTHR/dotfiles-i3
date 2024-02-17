@@ -1,0 +1,84 @@
+# Apply gtk theming
+exec_always ~/.config/sway/scripts/import-gsettings
+
+# Set inner/outer gaps
+gaps inner 6
+gaps outer 6
+
+# Hide titlebar on windows:
+default_border pixel 1
+
+# Default Font
+font pango:JetBrainsMono Regular 10
+
+# Thin borders:
+smart_borders on
+smart_gaps off
+
+# Set wallpaper:
+exec ~/.azotebg
+
+set $rosewater #f2d5cf
+set $flamingo  #eebebe
+set $pink      #f4b8e4
+set $mauve     #ca9ee6
+set $red       #e78284
+set $maroon    #ea999c
+set $peach     #ef9f76
+set $yellow    #e5c890
+set $green     #a6d189
+set $teal      #81c8be
+set $sky       #99d1db
+set $sapphire  #85c1dc
+set $blue      #8caaee
+set $lavender  #babbf1
+set $text      #c6d0f5
+set $subtext1  #b5bfe2
+set $subtext0  #a5adce
+set $overlay2  #949cbb
+set $overlay1  #838ba7
+set $overlay0  #737994
+set $surface2  #626880
+set $surface1  #51576d
+set $surface0  #414559
+set $base      #303446
+set $mantle    #292c3c
+set $crust     #232634
+
+# Window borders
+#client.focused          #5C8286 #5C8286 #ffffff #2e9ef4   #8fbcbb
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+#client.unfocused        #333333 #222222 #888888 #333845   #333845
+#client.urgent           #2f343a #900000 #ffffff #900000   #900000
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #333845
+#client.background       #ffffff
+
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
+
+#
+# Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
+bar {
+    swaybar_command waybar
+    
+    colors {
+        background         $base
+        statusline         $text
+        focused_statusline $text
+        active_workspace   $base $text $blue
+        focused_separator  $base
+        focused_workspace  $base $base $green
+        active_workspace   $base $base $blue
+        inactive_workspace $base $base $surface1
+        urgent_workspace   $base $base $surface1
+        binding_mode       $base $base $surface1
+    }
+}
+
+seat seat0 xcursor_theme Catppuccin-Frappe-Mauve-Cursors 24

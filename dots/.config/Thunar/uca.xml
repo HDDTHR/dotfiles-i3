@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+	    <icon></icon>
+	    <name>Create symlink</name>
+	    <unique-id>1556550612940706-4</unique-id>
+	    <command>ln -s %f \ %n</command>
+	    <description>Creates an absolute symbolic link to the selected file in the same folder, which can then be moved or renamed as desired. man ln for more info.</description>
+	    <patterns>*</patterns>
+	    <directories/>
+	    <audio-filnnes/>
+	    <image-files/>
+	    <other-files/>
+	    <text-files/>
+	    <video-files/>
+    </action>
+    <action>
+	    <icon></icon>
+	    <name>Open Terminal here</name>
+	    <unique-id>1583423998119931-1</unique-id>
+	    <command>foot -D %f</command>
+	    <description>Open terminal in the current directory.</description>
+	    <patterns>*</patterns>
+	    <directories/>
+    </action>
+</actions>

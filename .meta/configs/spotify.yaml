@@ -1,0 +1,13 @@
+## This configuration installs spotify with the appropriate themes and plugins.
+- link:
+    ~/.config/spicetify: dots/.config/spicetify
+    
+- shell:
+    - yay -S --needed --noconfirm spotify spicetify-cli
+    
+- sudo:
+    - shell:
+        - chmod a+wr /opt/spotify && chmod a+wr /opt/spotify/Apps -R
+        
+#- shell:
+#    - spicetify apply

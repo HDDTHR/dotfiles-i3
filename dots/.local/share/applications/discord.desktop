@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Vesktop
+StartupWMClass=discord
+Comment=
+GenericName=Internet Messenger
+Exec=vesktop --ozone-platform-hint=auto
+Icon=vesktop
+Type=Application
+Categories=Network;InstantMessaging;
+Path=
+Terminal=false
+StartupNotify=false

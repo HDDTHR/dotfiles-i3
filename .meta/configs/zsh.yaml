@@ -1,0 +1,12 @@
+## This configuration installs zsh and its configurations
+
+- shell:
+    - yay -S --needed --noconfirm zsh
+    - chsh -s $(which zsh)
+    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended || true
+    - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || true
+    
+- link:
+    ~/.config/zsh-syntax-highlighting: dots/.config/zsh-syntax-highlighting
+    
+    ~/.zshrc: dots/.zshrc

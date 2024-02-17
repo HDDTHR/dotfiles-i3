@@ -1,0 +1,11 @@
+{
+    "minimizeToTray": "on",
+    "discordBranch": "stable",
+    "arRPC": "on",
+    "splashColor": "rgb(166, 174, 206)",
+    "splashBackground": "rgb(48, 52, 70)",
+    "customTitleBar": false,
+    "hardwareAcceleration": true,
+    "splashTheming": true,
+    "staticTitle": true
+}

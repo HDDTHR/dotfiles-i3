@@ -1,0 +1,136 @@
+// Global 
+{
+    "layer": "top",
+    "position": "top",
+
+    // If height property would be not present, it'd be calculated dynamically
+    "height": 30,
+
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+    ],
+ 
+    "modules-center": [
+    ],
+
+    "modules-right": [
+        "tray",
+        "idle_inhibitor",
+        "memory",
+        "cpu",
+        "sway/language",
+        "backlight#value",
+        "pulseaudio",
+        "custom/profiles",
+        "upower",
+        "clock",
+    ],
+
+    // Modules
+
+    "custom/profiles": {
+        "exec": "~/.config/waybar/scripts/profiles.sh",
+        "restart-interval": 2,
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon} ",
+        "format-icons":{
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "upower": {
+         "icon-size": 14,
+         "hide-if-empty": true,
+         "tooltip": true,
+         "tooltip-spacing": 20
+    },
+
+    "clock": {
+        "interval": 10,
+        "format-alt": "{:%e %b %Y}", // Icon: calendar-alt
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%e %B %Y}"
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%", // Icon: microchip
+        "states": {
+            "warning": 70,
+            "critical": 90,
+        },
+        "on-click": "foot -e 'htop'",
+    },
+
+    "sway/language": {
+        "format": "{long}",
+        "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": " {}%", // Icon: memory
+        "on-click": "foot -e 'htop'", 
+        "states": {
+            "warning": 70,
+            "critical": 90
+        }
+    },
+
+    "network#vpn": {
+        "interface": "tun0",
+        "format": "  {essid} ({signalStrength}%)",
+        "format-disconnected": "⚠  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+    },
+
+    "sway/mode": {
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "sway/window": {
+        "format": "{}",
+        "max-length": 120
+    },
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "disable-markup" : false,
+        "all-outputs": true
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing":10,
+     },
+
+    "backlight#value" :{
+         "format": "{percent}% ",
+         "on-scroll-down": "brightnessctl -c backlight set --min-value=1067 5%-",
+         "on-scroll-up": "brightnessctl -c backlight set 5%+"
+    },
+}

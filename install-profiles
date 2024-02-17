@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASE_CONFIG="base"
+CONFIG_SUFFIX=".yaml"
+
+META_DIR=".meta"
+CONFIG_DIR="configs"
+PROFILES_DIR="profiles"
+
+DOTBOT_DIR="dotbot"
+DOTBOT_BIN="bin/dotbot"
+
+BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+DOTBOT_PLUGIN_DIR=".meta/plugins"
+
+if [[ $UID -eq 0 ]]; then
+    if [ -z "$SUDO_USER" ]; then
+        echo "Script is running as root but SUDO_USER is not set."
+        exit 1
+    fi
+    SUDO_PREFIX="sudo -u $SUDO_USER"
+else
+    SUDO_PREFIX=""
+fi
+
+cd "${BASE_DIR}"
+git -C "${BASE_DIR}" submodule sync --quiet --recursive
+git submodule update --init --recursive "${BASE_DIR}"
+
+CONFIGS=()
+while IFS= read -r config; do
+    CONFIGS+=" ${config}"
+done < "${META_DIR}/${PROFILES_DIR}/$1"
+
+shift
+
+for config in ${CONFIGS} ${@}; do
+    echo -e "\nConfigure $config"
+
+    configFile=$(${SUDO_PREFIX} mktemp)
+    trap 'rm -f "$configFile"' EXIT
+    
+    echo -e "$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")" > "$configFile"
+
+    ${SUDO_PREFIX} ${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN} -d ${BASE_DIR} --plugin-dir ${DOTBOT_PLUGIN_DIR}/* -c $configFile
+
+done
+
+cd "${BASE_DIR}"

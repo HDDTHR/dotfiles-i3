@@ -1,0 +1,31 @@
+# Auth with polkit-gnome:
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+# Desktop notifications
+exec mako
+
+# OSD alerts
+exec swayosd-server
+
+# Network Applet
+exec nm-applet --indicator
+
+# GTK3 applications take a long time to start
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+     
+# Welcome App
+exec dex -a -s /etc/xdg/autostart/:~/.config/autostart/  
+
+# Sway Fader (fades out-of-focus windows)
+#exec python3 ~/.config/sway/scripts/swayfader.py      
+
+# Ulauncher
+exec ulauncher --hide-window --no-window-shadow
+
+# Add workspace icons
+exec sworkstyle -c $XDG_CONFIG_HOME/sworkstyle/config.toml  &> /tmp/sworkstyle.log
+
+# Enable autotiling for a golden ratio split
+exec_always autotiling

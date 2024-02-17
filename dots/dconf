@@ -1,0 +1,39 @@
+[org/gnome/desktop/interface]
+cursor-theme='Adawita'
+font-name='JetBrainsMono 10'
+gtk-theme='Arc-Dark'
+icon-theme='Adawita'
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+
+[org/x/editor/plugins]
+active-plugins=['joinlines', 'spell', 'docinfo', 'open-uri-context-menu', 'time', 'sort', 'textsize']
+
+[org/x/editor/preferences/editor]
+auto-save=true
+auto-save-interval=uint32 0
+display-line-numbers=true
+display-right-margin=true
+draw-whitespace=false
+prefer-dark-theme=true
+scheme='catppuccin-frappe'
+
+[org/x/editor/preferences/ui]
+menubar-visible=true
+side-panel-visible=false
+statusbar-visible=true
+toolbar-visible=false
+
+[org/x/editor/state/window]
+bottom-panel-size=140
+side-panel-active-page=827629879
+side-panel-size=200
