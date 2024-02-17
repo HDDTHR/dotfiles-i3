@@ -1,0 +1,24 @@
+{
+  "policies": {
+    "Extensions": {
+      "Install": [
+        "https://addons.mozilla.org/firefox/downloads/file/3551054/ublock_origin-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/file/4158232/decentraleyes-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/file/4232703/privacy_badger17-latest.xpi",
+        "https://addons.mozilla.org/firefox/downloads/file/4233074/darkreader-latest.xpi"
+      ]
+    },
+    "ExtensionUpdate": true,
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": false,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true,
+      "Exceptions": []
+    }
+  }
+}
+
