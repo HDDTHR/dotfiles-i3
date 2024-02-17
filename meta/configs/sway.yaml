@@ -71,7 +71,6 @@
 
 - sudo:
     - link:
-        /usr/share/sddm/scripts/wayland-session: dots/wayland-session
         /etc/greetd/config.toml: dots/config.toml
         /etc/locale.gen: dots/locale.gen
 
