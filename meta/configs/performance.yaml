@@ -1,8 +1,6 @@
-## This configuration installs vesktop (discord wannabe) with the appropriate themes and plugins.
-- link:
-    ~/.config/Code - OSS/User/settings.json: dots/.config/Code - OSS/User/settings.json
-    
+## This configuration tried to improve the performance of the whole system. 
 - shell:
     - yay -S --needed --noconfirm preload
-    - systemctl enable preload.service
-
+- sudo:
+    - shell:
+        - systemctl enable preload.service
