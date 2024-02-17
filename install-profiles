@@ -5,7 +5,7 @@ set -e
 BASE_CONFIG="base"
 CONFIG_SUFFIX=".yaml"
 
-META_DIR=".meta"
+META_DIR="meta"
 CONFIG_DIR="configs"
 PROFILES_DIR="profiles"
 
@@ -14,7 +14,7 @@ DOTBOT_BIN="bin/dotbot"
 
 BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-DOTBOT_PLUGIN_DIR=".meta/plugins"
+DOTBOT_PLUGIN_DIR="meta/plugins"
 
 if [[ $UID -eq 0 ]]; then
     if [ -z "$SUDO_USER" ]; then

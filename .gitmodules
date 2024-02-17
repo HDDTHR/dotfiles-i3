@@ -1,9 +1,6 @@
-[submodule ".meta/dotbot"]
-	path = .meta/dotbot
-	url = https://github.com/anishathalye/dotbot
-[submodule ".meta/plugins/dotbot-sudo"]
-	path = .meta/plugins/dotbot-sudo
+[submodule "meta/dotbot"]
+	path = meta/dotbot
+	url = https://github.com/anishathalye/dotbot.git
+[submodule "meta/plugins/dotbot-sudo"]
+	path = meta/plugins/dotbot-sudo
 	url = https://github.com/DrDynamic/dotbot-sudo.git
-[submodule "config/ulauncher/user-themes/Matcha-Dark-Azul-ulauncher"]
-	path = config/ulauncher/user-themes/Matcha-Dark-Azul-ulauncher
-	url = https://github.com/DaveHigs/Matcha-Dark-Azul-ulauncher.git
