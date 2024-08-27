@@ -16,5 +16,5 @@
 
 - sudo:
     - shell:
-        - yay -Syu --needed --noconfirm
+        - pacman -Syu --needed --noconfirm
 
