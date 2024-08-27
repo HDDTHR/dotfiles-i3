@@ -4,6 +4,6 @@
     - yay -S --needed --noconfirm vesktop-bin
     
 - link:
-    ~/.config/vesktop/themes: dots/.config/vesktop/themes
-    ~/.config/vesktop/settings: dots/.config/vesktop/settings
-    ~/.config/vesktop/settings.json: dots/.config/vesktop/settings.json
+    ~/.config/vesktop/themes: dots/home/user/.config/vesktop/themes
+    ~/.config/vesktop/settings: dots/home/user/.config/vesktop/settings
+    ~/.config/vesktop/settings.json: dots/home/user/.config/vesktop/settings.json

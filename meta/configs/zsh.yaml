@@ -7,5 +7,5 @@
     - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting || true
     
 - link:
-    ~/.config/zsh-syntax-highlighting: dots/.config/zsh-syntax-highlighting
-    ~/.zshrc: dots/.zshrc
+    ~/.config/zsh-syntax-highlighting: dots/home/user/.config/zsh-syntax-highlighting
+    ~/.zshrc: dots/home/user/.zshrc

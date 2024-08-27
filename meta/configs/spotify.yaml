@@ -4,7 +4,7 @@
     - yay -S --needed --noconfirm spotify spicetify-cli
 
 - link:
-    ~/.config/spicetify: dots/.config/spicetify
+    ~/.config/spicetify: dots/home/user/.config/spicetify
 
 - sudo:
     - shell:

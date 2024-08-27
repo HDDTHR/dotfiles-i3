@@ -8,5 +8,6 @@
         pacman -Syu --needed --noconfirm
         nano
         base-devel
+        
 - shell:
   - export TEMP_YAY=$(mktemp -d) && git clone https://aur.archlinux.org/yay.git $TEMP_YAY > /dev/null 2>&1 && cd $TEMP_YAY && yes | makepkg -si --noconfirm

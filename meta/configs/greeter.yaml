@@ -1,0 +1,10 @@
+- shell:
+    - yay -S --needed --noconfirm lightdm
+    - groupadd -r autologin
+    - gpasswd -a ${SUDO_USER:-$USER} autologin
+
+- sudo:
+    - link:
+        /etc/lightdm/lightdm.conf: dots/etc/lightdm/lightdm.conf
+    - shell:
+        - grep -q '^autologin-user=' /etc/lightdm/lightdm.conf || echo "autologin-user=${SUDO_USER:-$USER}" >> /etc/lightdm/lightdm.conf6p

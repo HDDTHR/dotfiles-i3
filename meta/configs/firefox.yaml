@@ -5,4 +5,4 @@
 
 - sudo:
     - link:
-        /etc/firefox/policies/policies.json: dots/policies.json
+        /etc/firefox/policies/policies.json: dots/etc/firefox/policies/policies.json
