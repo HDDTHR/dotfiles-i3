@@ -1,0 +1,13 @@
+# This installs all the important packages
+- sudo:
+  - shell:
+      - pacman-key --init
+      - pacman-key --populate
+      - >
+        pacman -Syu --needed --noconfirm
+        nano
+        base-devel
+      - export TEMP_YAY=$(mktemp -d)
+      - git clone https://aur.archlinux.org/yay.git $TEMP_YAY
+      - cd $TEMP_YAY
+      - yes | makepkg -si --noconfirm
