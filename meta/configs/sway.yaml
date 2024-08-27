@@ -3,60 +3,52 @@
 - shell:
     - >
       yay -S --needed --noconfirm
-      swayfx
-      swayidle
-      swaylock-effects
-      swaybg
-      azote
-      sworkstyle
-      autotiling
-      dex
-      gtk-engine-murrine
-      greetd-tuigreet
-      wl-clipboard
-      ulauncher
-      wofi
-      waybar
       acpi
-      bluez
-      blueman
-      network-manager-applet
-      wayland-protocols
-      xorg-xwayland
-      egl-wayland
-      gtk-layer-shell
-      xdg-desktop-portal-wlr
-      polkit-gnome
-      brightnessctl
-      sysstat
-      htop
-      mako
-      ttf-nerd-fonts-symbols
-      ttf-jetbrains-mono
-      ttf-ubuntu-font-family
-      sway-input-config
-      nwg-displays
-      grim
-      slurp
+      arandr
+      arc-gtk-theme-eos
+      archlinux-xdg-menu
+      awesome-terminal-fonts
+      dex
+      dmenu
+      dunst
+      eos-settings-i3wm
+      endeavouros-xfce4-terminal-colors
+      eos-lightdm-slick-theme
+      eos-qogir-icons
+      feh
+      i3-wm
+      i3blocks
+      i3lock
+      i3status
       jq
-      catppuccin-gtk-theme-frappe
-      catppuccin-cursors-frappe
-      swayosd-git
+      nwg-look
+      network-manager-applet
+      numlockx
+      playerctl
+      polkit-gnome
+      rofi
+      scrot
+      sysstat
+      xbindkeys
+      xdg-user-dirs-gtk
+      xfce4-terminal
+      xorg-xbacklight
+      xorg-xdpyinfo
 
 - link:
-    ~/.config/wofi: dots/home/user/.config/wofi
-    ~/.config/ulauncher: dots/home/user/.config/ulauncher
-    ~/.config/mako: dots/home/user/.config/mako
-    ~/.config/swaylock: dots/home/user/.config/swaylock
-    ~/.config/sway: dots/home/user/.config/sway
-    ~/.config/waybar: dots/home/user/.config/waybar
+    ~/.config/autostart: dots/home/user/.config/autostart
+    ~/.config/dunst: dots/home/user/.config/dunst
     ~/.config/gtk-3.0: dots/home/user/.config/gtk-3.0
-    ~/.config/sworkstyle: dots/home/user/.config/sworkstyle
-    ~/.config/wallpaper.png: dots/home/user/.config/wallpaper.png
+    ~/.config/gtk-4.0: dots/home/user/.config/gtk-4.0
+    ~/.config/i3: dots/home/user/.config/i3
+    ~/.config/nano: dots/home/user/.config/nano
+    ~/.config/nwg-look: dots/home/user/.config/nwg-look
+    ~/.config/rofi: dots/home/user/.config/rofi
+    ~/.config/xsettingsd: dots/home/user/.config/xsettingsd
 
     ~/.profile: dots/home/user/.profile
     ~/.gtkrc-2.0: dots/home/user/.gtkrc-2.0
-    ~/.azotebg: dots/home/user/.azotebg
+    ~/.Xresources: dots/home/user/.Xresources
 
 - sudo:
     - link:

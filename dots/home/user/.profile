@@ -1,9 +1,2 @@
-export MOZ_ENABLE_WAYLAND=1
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_CURRENT_DESKTOP=sway
-export XDG_SESSION_TYPE=wayland
-export WLR_NO_HARDWARE_CURSORS=1
-#export WLR_NO_HARDWARE_CURSORS=0
-export WLR_RENDERER_ALLOW_SOFTWARE=1
-export GTK_USE_PORTAL=0
-export TERMINAL=foot
+export TERMINAL=xfce4-terminal
+#export QT_QPA_PLATFORMTHEME=qt5ct

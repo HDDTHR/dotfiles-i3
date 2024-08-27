@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-pkill swaybg
-swaybg -o 'eDP-1' -i "/home/emo/.config/wallpaper.png" -m fill &
