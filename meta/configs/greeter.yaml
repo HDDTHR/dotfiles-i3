@@ -3,8 +3,8 @@
 
 - sudo:
     - shell:
-        - groupadd -r autologin
-        - gpasswd -a ${SUDO_USER:-$USER} autologin
+        - groupadd -r autologin || true
+        - gpasswd -a ${SUDO_USER:-$USER} autologin || true
     - link:
         /etc/lightdm/lightdm.conf: dots/etc/lightdm/lightdm.conf
     - shell:
