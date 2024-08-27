@@ -1,5 +1,10 @@
 # This configuration installs extensions for firefox
 
+- shell:
+    - yay -S --needed --noconfirm firefox
+
 - sudo:
     - link:
         /etc/firefox/policies/policies.json: dots/policies.json
+
+

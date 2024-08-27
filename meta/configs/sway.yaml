@@ -1,29 +1,5 @@
 ## This configuration installs sway and the system-wide theme spread across multiple files ;(
 
-- link:
-    ~/.config/wofi: dots/.config/wofi
-    ~/.config/ulauncher: dots/.config/ulauncher
-    ~/.config/mako: dots/.config/mako
-    ~/.config/swaylock: dots/.config/swaylock
-    ~/.config/sway: dots/.config/sway
-    ~/.config/waybar: dots/.config/waybar
-    ~/.config/gtk-3.0: dots/.config/gtk-3.0
-    ~/.config/sworkstyle: dots/.config/sworkstyle
-    ~/.config/wallpaper.png: dots/.config/wallpaper.png
-    
-    ~/.local/share/applications/htop.desktop: dots/.local/share/applications/htop.desktop
-    ~/.local/share/applications/xterm.desktop: dots/.local/share/applications/xterm.desktop
-    ~/.local/share/applications/uxterm.desktop: dots/.local/share/applications/uxterm.desktop
-    ~/.local/share/applications/qvidcap.desktop: dots/.local/share/applications/qvidcap.desktop
-    ~/.local/share/applications/qv412.desktop: dots/.local/share/applications/qv412.desktop
-    ~/.local/share/applications/stoken-gui.desktop: dots/.local/share/applications/stoken-gui.desktop
-    ~/.local/share/applications/stoken-gui-small.desktop: dots/.local/share/applications/stoken-gui-small.desktop
-    ~/.local/share/applications/stopo.desktop: dots/.local/share/applications/stopo.desktop 
-    
-    ~/.profile: dots/.profile
-    ~/.gtkrc-2.0: dots/.gtkrc-2.0
-    ~/.azotebg: dots/.azotebg
-
 - shell:
     - >
       yay -S --needed --noconfirm
@@ -66,18 +42,35 @@
       catppuccin-gtk-theme-frappe
       catppuccin-cursors-frappe
       swayosd-git
-      
-#     - yay -Rs --needed --noconfirm swayosd-git-debug
+
+- link:
+    ~/.config/wofi: dots/.config/wofi
+    ~/.config/ulauncher: dots/.config/ulauncher
+    ~/.config/mako: dots/.config/mako
+    ~/.config/swaylock: dots/.config/swaylock
+    ~/.config/sway: dots/.config/sway
+    ~/.config/waybar: dots/.config/waybar
+    ~/.config/gtk-3.0: dots/.config/gtk-3.0
+    ~/.config/sworkstyle: dots/.config/sworkstyle
+    ~/.config/wallpaper.png: dots/.config/wallpaper.png
+    #~/.local/share/applications/htop.desktop: dots/.local/share/applications/htop.desktop
+    #~/.local/share/applications/xterm.desktop: dots/.local/share/applications/xterm.desktop
+    #~/.local/share/applications/uxterm.desktop: dots/.local/share/applications/uxterm.desktop
+    #~/.local/share/applications/qvidcap.desktop: dots/.local/share/applications/qvidcap.desktop
+    #~/.local/share/applications/qv412.desktop: dots/.local/share/applications/qv412.desktop
+    #~/.local/share/applications/stoken-gui.desktop: dots/.local/share/applications/stoken-gui.desktop
+    #~/.local/share/applications/stoken-gui-small.desktop: dots/.local/share/applications/stoken-gui-small.desktop
+    #~/.local/share/applications/stopo.desktop: dots/.local/share/applications/stopo.desktop 
+    ~/.profile: dots/.profile
+    ~/.gtkrc-2.0: dots/.gtkrc-2.0
+    ~/.azotebg: dots/.azotebg
 
 - sudo:
     - link:
         /etc/greetd/config.toml: dots/config.toml
         /etc/locale.gen: dots/locale.gen
-
     - shell:
         - systemctl enable greetd.service
         - systemctl enable bluetooth.service
         - systemctl enable --now swayosd-libinput-backend.service
         - locale-gen
-
-

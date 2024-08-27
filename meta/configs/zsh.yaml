@@ -8,5 +8,4 @@
     
 - link:
     ~/.config/zsh-syntax-highlighting: dots/.config/zsh-syntax-highlighting
-    
     ~/.zshrc: dots/.zshrc

@@ -1,6 +1,8 @@
 ## This configuration tried to improve the performance of the whole system. 
+
 - shell:
     - yay -S --needed --noconfirm preload
+    
 - sudo:
     - shell:
         - systemctl enable preload.service

@@ -1,15 +1,11 @@
 ## This configuration installs vscode and configures it.
-- link:
-    ~/.config/Code - OSS/User/settings.json: dots/.config/Code - OSS/User/settings.json
-    
-    ~/.local/share/applications/code-oss.desktop: dots/.local/share/applications/code-oss.desktop
-    
+
 - shell:
-    - yay -S --needed --noconfirm code code-marketplace
-    - code --install-extension ms-azuretools.vscode-docker
-    - code --install-extension ms-python.debugpy
-    - code --install-extension ms-python.python
-    - code --install-extension ms-python.vscode-pylance
-    - code --install-extension ms-vscode.cpptools
-    - code --install-extension Catppuccin.catppuccin-vsc
+    - yay -S --needed --noconfirm visual-studio-code-insiders-bin
+    - code-insiders --install-extension ms-azuretools.vscode-docker
+    - code-insiders --install-extension ms-python.debugpy
+    - code-insiders --install-extension ms-python.python
+    - code-insiders --install-extension ms-python.vscode-pylance
+    - code-insiders --install-extension ms-vscode.cpptools
+    - code-insiders --install-extension Catppuccin.catppuccin-vsc
 

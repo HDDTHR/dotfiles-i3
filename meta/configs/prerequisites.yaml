@@ -1,4 +1,5 @@
 # This installs all the important packages
+
 - sudo:
   - shell:
       - pacman-key --init
