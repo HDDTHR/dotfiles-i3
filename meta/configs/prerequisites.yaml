@@ -11,4 +11,5 @@
       - export TEMP_YAY=$(mktemp -d)
       - git clone https://aur.archlinux.org/yay.git $TEMP_YAY
       - cd $TEMP_YAY
-      - yes | makepkg -si --noconfirm
+- shell:
+  - yes | makepkg -si --noconfirm
