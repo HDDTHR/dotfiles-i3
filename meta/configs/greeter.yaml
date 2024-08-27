@@ -8,4 +8,5 @@
     - link:
         /etc/lightdm/lightdm.conf: dots/etc/lightdm/lightdm.conf
     - shell:
-        - grep -q '^autologin-user=' /etc/lightdm/lightdm.conf || echo "autologin-user=${SUDO_USER:-$USER}" >> /etc/lightdm/lightdm.conf6p
+        - grep -q '^autologin-user=' /etc/lightdm/lightdm.conf || echo "autologin-user=${SUDO_USER:-$USER}" >> /etc/lightdm/lightdm.conf
+        

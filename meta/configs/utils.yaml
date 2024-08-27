@@ -19,7 +19,6 @@
     ~/.config/Thunar: dots/home/user/.config/Thunar
     ~/.config/xfce4: dots/home/user/.config/xfce4
     ~/.config/foot: dots/home/user/.config/foot
-    ~/.local/share/xed: dots/.local/share/xed
 
 - sudo:
     - shell: 
