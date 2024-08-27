@@ -8,4 +8,3 @@
     - code-insiders --install-extension ms-python.vscode-pylance
     - code-insiders --install-extension ms-vscode.cpptools
     - code-insiders --install-extension Catppuccin.catppuccin-vsc
-

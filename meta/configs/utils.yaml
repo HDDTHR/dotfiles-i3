@@ -13,7 +13,6 @@
       foot
       imv
       xed
-      c-lolcat
       ttf-font-awesome
 
 - link:
@@ -21,12 +20,6 @@
     ~/.config/xfce4: dots/.config/xfce4
     ~/.config/foot: dots/.config/foot
     ~/.local/share/xed: dots/.local/share/xed
-    #~/.local/share/applications/org.codeberg.dnkl.footclient.desktop: dots/.local/share/applications/org.codeberg.dnkl.footclient.desktop
-    #~/.local/share/applications/org.codeberg.dnkl.foot-server.desktop: dots/.local/share/applications/org.codeberg.dnkl.foot-server.desktop
-    #~/.local/share/applications/org.gnome.FileRoller.desktop: dots/.local/share/applications/org.gnome.FileRoller.desktop 
-    #~/.local/share/applications/thunar-bulk-rename.desktop: dots/.local/share/applications/thunar-bulk-rename.desktop
-    #~/.local/share/applications/thunar-settings.desktop: dots/.local/share/applications/thunar-settings.desktop
-    #~/.local/share/applications/thunar-volman-settings.desktop: dots/.local/share/applications/thunar-volman-settings.desktop
 
 - sudo:
     - shell: 

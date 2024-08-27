@@ -53,14 +53,7 @@
     ~/.config/gtk-3.0: dots/.config/gtk-3.0
     ~/.config/sworkstyle: dots/.config/sworkstyle
     ~/.config/wallpaper.png: dots/.config/wallpaper.png
-    #~/.local/share/applications/htop.desktop: dots/.local/share/applications/htop.desktop
-    #~/.local/share/applications/xterm.desktop: dots/.local/share/applications/xterm.desktop
-    #~/.local/share/applications/uxterm.desktop: dots/.local/share/applications/uxterm.desktop
-    #~/.local/share/applications/qvidcap.desktop: dots/.local/share/applications/qvidcap.desktop
-    #~/.local/share/applications/qv412.desktop: dots/.local/share/applications/qv412.desktop
-    #~/.local/share/applications/stoken-gui.desktop: dots/.local/share/applications/stoken-gui.desktop
-    #~/.local/share/applications/stoken-gui-small.desktop: dots/.local/share/applications/stoken-gui-small.desktop
-    #~/.local/share/applications/stopo.desktop: dots/.local/share/applications/stopo.desktop 
+
     ~/.profile: dots/.profile
     ~/.gtkrc-2.0: dots/.gtkrc-2.0
     ~/.azotebg: dots/.azotebg

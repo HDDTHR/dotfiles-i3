@@ -7,4 +7,3 @@
     ~/.config/vesktop/themes: dots/.config/vesktop/themes
     ~/.config/vesktop/settings: dots/.config/vesktop/settings
     ~/.config/vesktop/settings.json: dots/.config/vesktop/settings.json
-    #~/.local/share/applications/vesktop.desktop: dots/.local/share/applications/vesktop.desktop
