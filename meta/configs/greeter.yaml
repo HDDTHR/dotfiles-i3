@@ -1,9 +1,10 @@
 - shell:
     - yay -S --needed --noconfirm lightdm
-    - groupadd -r autologin
-    - gpasswd -a ${SUDO_USER:-$USER} autologin
 
 - sudo:
+    - shell:
+        - groupadd -r autologin
+        - gpasswd -a ${SUDO_USER:-$USER} autologin
     - link:
         /etc/lightdm/lightdm.conf: dots/etc/lightdm/lightdm.conf
     - shell:
