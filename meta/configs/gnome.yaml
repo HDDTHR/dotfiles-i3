@@ -1,0 +1,6 @@
+- shell:
+  - yay -S --needed --noconfirm gnome
+
+- sudo:
+  - shell:
+    - systemctl enable --now gdm.service

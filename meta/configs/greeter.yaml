@@ -1,6 +1,6 @@
 # Installs an autologin greeter
 - shell:
-    - yay -S --needed --noconfirm lightdm
+    - yay -S --needed --noconfirm lightdm lightdm-gtk-greeter
 
 - sudo:
     - shell:
