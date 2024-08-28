@@ -4,6 +4,7 @@
       flatpak
       dbeaver
       qbittorrent
+    - flatpak remote-add --if-not-exists --user flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     - flatpak install --noninteractive flathub org.videolan.VLC
     - flatpak install --noninteractive flathub net.werwolv.ImHex
     - flatpak install --noninteractive flathub com.getpostman.Postman
