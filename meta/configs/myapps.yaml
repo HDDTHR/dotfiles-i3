@@ -14,9 +14,9 @@
       nvm
       uv
     - flatpak remote-add --if-not-exists --user --noninteractive flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-    - flatpak install --noninteractive flathub org.videolan.VLC
-    - flatpak install --noninteractive flathub net.werwolv.ImHex
-    - flatpak install --noninteractive flathub com.getpostman.Postman
+    - flatpak install --noninteractive --user flathub org.videolan.VLC
+    - flatpak install --noninteractive --user flathub net.werwolv.ImHex
+    - flatpak install --noninteractive --user flathub com.getpostman.Postman
 
 - sudo:
   - shell:
