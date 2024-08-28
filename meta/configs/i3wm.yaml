@@ -35,6 +35,8 @@
       xorg-server
       xorg-apps
       xterm
+      power-profile-daemon
+      networkmanager
 
 - link:
     ~/.config/autostart: dots/home/user/.config/autostart
@@ -46,6 +48,7 @@
     ~/.config/nwg-look: dots/home/user/.config/nwg-look
     ~/.config/rofi: dots/home/user/.config/rofi
     ~/.config/xsettingsd: dots/home/user/.config/xsettingsd
+    ~/.config/wallpaper.png: dots/home/user/.config/wallpaper.png
 
     ~/.local/share/nwg-look: dots/home/user/.local/share/nwg-look
     ~/.local/share/rofi: dots/home/user/.local/share/rofi
@@ -59,5 +62,6 @@
         /etc/locale.gen: dots/etc/locale.gen
     - shell:
         - systemctl enable bluetooth.service
+        - systemctl enable NetworkManager.service
         - chmod +x ~/.config/i3/scripts/*
         - locale-gen
