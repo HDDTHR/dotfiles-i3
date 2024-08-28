@@ -1,5 +1,5 @@
 ## This configuration installs spotify with the appropriate themes and plugins.
 
 - shell:
-    - yay -S --needed --noconfirm spotify
+    - yay -S --needed --noconfirm spotify-launcher
 
