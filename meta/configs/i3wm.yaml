@@ -63,5 +63,5 @@
     - shell:
         - systemctl enable bluetooth.service
         - systemctl enable NetworkManager.service
-        - chmod +x ~/.config/i3/scripts/*
+        - chmod +x /home/$SUDO_USER/.config/i3/scripts/*
         - locale-gen
