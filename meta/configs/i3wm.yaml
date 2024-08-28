@@ -59,4 +59,5 @@
         /etc/locale.gen: dots/etc/locale.gen
     - shell:
         - systemctl enable bluetooth.service
+        - chmod +x ~/.config/i3/scripts/*
         - locale-gen
