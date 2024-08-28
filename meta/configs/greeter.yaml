@@ -1,6 +1,6 @@
 # Installs an autologin greeter
 - shell:
-    - yay -S --needed --noconfirm lightdm lightdm-slick-greeter
+    - yay -S --needed --noconfirm lightdm
 
 - sudo:
     - shell:

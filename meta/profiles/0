@@ -1,5 +1,6 @@
 prerequisites
 i3wm
+greeter
 utils
 performance
 zsh
