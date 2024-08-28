@@ -1,9 +1,3 @@
-[org/gnome/desktop/interface]
-cursor-theme='Adawita'
-font-name='JetBrainsMono 10'
-gtk-theme='Arc-Dark'
-icon-theme='Adawita'
-
 [org/gtk/settings/file-chooser]
 date-format='regular'
 location-mode='path-bar'
@@ -25,7 +19,6 @@ display-line-numbers=true
 display-right-margin=true
 draw-whitespace=false
 prefer-dark-theme=true
-scheme='catppuccin-frappe'
 
 [org/x/editor/preferences/ui]
 menubar-visible=true
