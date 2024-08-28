@@ -34,6 +34,7 @@
       xfce4-terminal
       xorg-xbacklight
       xorg-xdpyinfo
+      bluez
 
 - link:
     ~/.config/autostart: dots/home/user/.config/autostart
@@ -54,7 +55,5 @@
     - link:
         /etc/locale.gen: dots/etc/locale.gen
     - shell:
-        - systemctl enable greetd.service
         - systemctl enable bluetooth.service
-        - systemctl enable --now swayosd-libinput-backend.service
         - locale-gen

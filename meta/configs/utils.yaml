@@ -24,6 +24,7 @@
       xarchiver
       galculator
       ttf-font-awesome
+      blueman
 
 - link:
     ~/.config/Thunar: dots/home/user/.config/Thunar
