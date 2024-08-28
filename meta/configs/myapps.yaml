@@ -4,7 +4,20 @@
       flatpak
       dbeaver
       qbittorrent
+      docker
+      docker-rootless-extras
+      tldr
+      neofetch
+      wget
+      maven
+      jdk21-openjdk
+      nvm
+      uv
     - flatpak remote-add --if-not-exists --user --noninteractive flathub https://dl.flathub.org/repo/flathub.flatpakrepo
     - flatpak install --noninteractive flathub org.videolan.VLC
     - flatpak install --noninteractive flathub net.werwolv.ImHex
     - flatpak install --noninteractive flathub com.getpostman.Postman
+
+- sudo:
+  - shell:
+    - systemctl enable docker.service

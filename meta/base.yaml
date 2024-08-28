@@ -13,8 +13,3 @@
       recursive: true
     ~/.local:
       recursive: true
-
-- sudo:
-    - shell:
-        - pacman -Syu --needed --noconfirm
-
