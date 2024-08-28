@@ -2,5 +2,8 @@
   - yay -S --needed --noconfirm gnome
 
 - sudo:
+  - link:
+      /etc/gdm/custom.conf: dots/etc/gdm/custom.conf
   - shell:
     - systemctl enable --now gdm.service
+    - grep -q '^AutomaticLogin=' /etc/gdm/custom.conf || echo "AutomaticLogin=${SUDO_USER:-$USER}" >> /etc/gdm/custom.conf
