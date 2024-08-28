@@ -32,8 +32,8 @@
       xbindkeys
       xdg-user-dirs-gtk
       xfce4-terminal
-      xorg-xbacklight
-      xorg-xdpyinfo
+      xorg-server
+      xorg-apps
       bluez
 
 - link:
