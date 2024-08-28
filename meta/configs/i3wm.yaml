@@ -37,7 +37,7 @@
       xterm
       power-profile-daemon
       networkmanager
-      ark-gtk-theme
+      arc-gtk-theme
 
 - link:
     ~/.config/autostart: dots/home/user/.config/autostart
