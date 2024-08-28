@@ -1,8 +1,9 @@
 - shell:
     - >
       yay -S --needed --noconfirm
-      postman-bin
-      imhex-bin
       flatpak
       dbeaver
       qbittorrent
+    - flatpak install --noninteractive flathub org.videolan.VLC
+    - flatpak install --noninteractive flathub net.werwolv.ImHex
+    - flatpak install --noninteractive flathub com.getpostman.Postman
