@@ -1,0 +1,8 @@
+- shell:
+    - >
+      yay -S --needed --noconfirm
+      postman-bin
+      imhex-bin
+      flatpak
+      dbeaver
+      qbittorrent
