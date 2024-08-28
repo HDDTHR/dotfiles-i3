@@ -34,7 +34,7 @@
       xfce4-terminal
       xorg-server
       xorg-apps
-      bluez
+      xterm
 
 - link:
     ~/.config/autostart: dots/home/user/.config/autostart
@@ -46,6 +46,9 @@
     ~/.config/nwg-look: dots/home/user/.config/nwg-look
     ~/.config/rofi: dots/home/user/.config/rofi
     ~/.config/xsettingsd: dots/home/user/.config/xsettingsd
+
+    ~/.local/share/nwg-look: dots/home/user/.local/share/nwg-look
+    ~/.local/share/rofi: dots/home/user/.local/share/rofi
 
     ~/.profile: dots/home/user/.profile
     ~/.gtkrc-2.0: dots/home/user/.gtkrc-2.0

@@ -29,6 +29,8 @@
 - link:
     ~/.config/Thunar: dots/home/user/.config/Thunar
     ~/.config/xfce4: dots/home/user/.config/xfce4
+    
+    ~/.local/share/xed: dots/home/user/.local/share/xed
 
 - sudo:
     - shell: 
