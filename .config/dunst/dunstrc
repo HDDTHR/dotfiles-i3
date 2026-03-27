@@ -1,0 +1,72 @@
+[global]
+app_icon_position = top-right
+monitor = 0
+follow = mouse
+geometry = "300x60-20+48"
+indicate_hidden = yes
+shrink = no
+separator_height = 0
+padding = 16
+horizontal_padding = 16
+frame_width = 2
+sort = no
+idle_threshold = 120
+
+font = rissole 8
+line_height = 4
+
+markup = full
+
+format = %s\n%b
+
+alignment = left
+show_age_threshold = 60
+
+word_wrap = yes
+ellipsize = end
+ignore_newline = no
+
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+
+icon_position = left
+max_icon_size = 32
+
+sticky_history = yes
+history_length = 20
+browser = /usr/bin/firefox -new-tab
+always_run_script = true
+
+title = Dunst
+class = Dunst
+
+frame_color = "#89b4fa"
+separator_color = frame
+highlight = "#89b4fa"
+
+[urgency_low]
+timeout = 4
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_normal]
+timeout = 8
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+
+[urgency_critical]
+timeout = 0
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#fab387"
+
+[rules]
+desktop_entry = "netsoft-com.netsoft.hubstaff"
+body = "Screenshot taken"
+urgency = normal
+format = %s\n%b\n%a
+
+[slack]
+appname = "Slack"
+timeout = 0

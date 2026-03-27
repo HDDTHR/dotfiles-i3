@@ -1,0 +1,6 @@
+bindsym KP_Home exec playerctl previous
+
+bindsym KP_Begin exec playerctl play-pause
+
+bindsym KP_Prior exec playerctl next
+

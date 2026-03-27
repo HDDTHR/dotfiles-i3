@@ -1,0 +1,11 @@
+## Show all Notifications
+bindsym $mod+n exec --no-startup-id dunstctl history-pop
+
+## Close last notification
+bindsym $mod+m exec --no-startup-id dunstctl close
+
+## Close all notifications
+bindsym $mod+Shift+m exec --no-startup-id dunstctl close-all
+
+## Open notification context menu
+bindsym $mod+Shift+n exec --no-startup-id dunstctl context

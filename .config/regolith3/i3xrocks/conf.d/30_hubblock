@@ -1,0 +1,8 @@
+[hubblock]
+
+# Adjust path as necessary
+# Replace "hubstaff" with the path to your Hubstaff CLI executable
+command=~/.config/regolith3/i3xrocks/scripts/hubblock
+
+# Refresh interval in seconds
+interval=10
