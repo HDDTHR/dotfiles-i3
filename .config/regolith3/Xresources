@@ -3,14 +3,14 @@ wm.binding.launcher.app: d
 wm.binding.display: Shift+d
 wm.binding.settings: Shift+u
 wm.binding.sleep: Alt+s
+wm.binding.notification_ui: Alt+n
 
 wm.gaps.smart: off
 wm.program.unclutter: :
 
 regolith.look.path: /usr/share/regolith-look/lascaille
 
-wm.workspace.05.name: 5:5: Obsidian
-wm.workspace.06.name: 6:6: Spotify
+wm.workspace.06.name: 6:6: Youtube Music
 wm.workspace.07.name: 7:7: Outlook
 wm.workspace.08.name: 8:8: Slack
 wm.workspace.09.name: 9:9: Teams/Hubstaff
