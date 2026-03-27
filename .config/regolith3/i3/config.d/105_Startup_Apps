@@ -1,6 +1,4 @@
-exec --no-startup-id obsidian
 exec --no-startup-id slack
 exec --no-startup-id teams-for-linux
-exec --no-startup-id spotify
 exec --no-startup-id /home/steven-jildeh/.opt/Hubstaff/HubstaffClient.bin.x86_64
-exec --no-startup-id /usr/bin/firefoxpwa site launch 01KAS2MZR06CMVE0YRTXF0S1X7
+#exec --no-startup-id /usr/bin/firefoxpwa site launch 01KAS2MZR06CMVE0YRTXF0S1X7
