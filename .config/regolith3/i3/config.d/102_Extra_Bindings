@@ -1,0 +1,6 @@
+bindsym $mod+s sticky toggle
+bindsym $mod+Shift+s focus mode_toggle
+
+bindsym $mod+braceleft exec flameshot gui
+bindsym $mod+Shift+Escape exec --no-startup-id gnome-terminal -- zsh -c 'btop'
+bindsym $mod+braceright exec bash ~/.config/regolith3/i3/scripts/scripts.sh

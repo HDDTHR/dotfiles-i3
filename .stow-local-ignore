@@ -1,0 +1,9 @@
+# Matching based on Perl-compatible regex
+
+README.md
+\.idea
+\.git
+\.gitignore
+\.gitmodules
+Documents/**/*.md
+Documents/**/workspace.json

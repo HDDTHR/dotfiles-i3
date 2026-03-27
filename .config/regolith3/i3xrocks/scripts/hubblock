@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import subprocess
+import json
+
+def get_output():
+    raw_json = subprocess.run(["/home/steven-jildeh/.opt/Hubstaff/HubstaffCLI.bin.x86_64", "status"], check=True, text=True, capture_output=True).stdout
+    hub_object = json.loads(raw_json)
+
+    if "error" in hub_object:
+        return "<span color=\"#ed425f\">✖</span> Offline"
+    
+    if hub_object["tracking"] is False:
+        return "<span color=\"#d49204\">◯</span> Not tracking.."
+
+    return f'<span color=\"#16DB65\">⏺</span> {hub_object["active_project"]["name"].title()} {hub_object["active_project"]["tracked_today"][:4]}'
+if __name__ == "__main__":
+    print(get_output())

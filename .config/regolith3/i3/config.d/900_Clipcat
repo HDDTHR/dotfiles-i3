@@ -1,0 +1,8 @@
+# clipboard tool:
+exec_always --no-startup-id clipcatd
+
+set $launcher-clipboard-insert clipcat-menu insert
+set $launcher-clipboard-remove clipcat-menu remove
+
+bindsym $mod+p exec $launcher-clipboard-insert
+bindsym $mod+o exec $launcher-clipboard-remove

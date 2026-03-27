@@ -1,0 +1,9 @@
+for_window [class=".*obsidian.*"] move to workspace $ws5
+for_window [class=".*Spotify.*"] move to workspace $ws6
+for_window [class=".*FFPWA-01KAS2MZR06CMVE0YRTXF0S1X7.*"] move to workspace $ws7
+for_window [class=".*Slack.*"] move to workspace $ws8
+for_window [class=".*teams-for-linux.*"] move to workspace $ws9
+for_window [class=".*Netsoft-com.netsoft.hubstaff.*"] move to workspace $ws9; resize set width 400
+
+#for_window [class=".*Google-chrome.*"] move to workspace $ws3
+
