@@ -1,0 +1,154 @@
+source ~/.vimrc
+set scrolloff=5
+map Q gq
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+
+let mapleader = " "
+set showmatch
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set which-key
+set notimeout
+set history=3000000
+set vb
+set keep-english-in-normal
+
+" ========================
+" Normal Mode Keybindings
+" ========================
+
+" Language
+let g:WhichKeyDesc_Language = "<leader>l Language"
+let g:WhichKeyDesc_RenameElement = "<leader>lr Rename Element"
+nmap <leader>lr :action RenameElement<CR>
+let g:WhichKeyDesc_Move = "<leader>lv Move"
+nmap <leader>lv :action Move<CR>
+let g:WhichKeyDesc_MakeStatic = "<leader>ls Make Static"
+nmap <leader>ls :action MakeStatic<CR>
+let g:WhichKeyDesc_ConvertToInstanceMethod = "<leader>lc Convert To Instance Method"
+nmap <leader>lc :action ConvertToInstanceMethod<CR>
+let g:WhichKeyDesc_Inline = "<leader>li Inline"
+nmap <leader>li :action Inline<CR>
+let g:WhichKeyDesc_ExtractMethod = "<leader>lm Extract Method"
+nmap <leader>lm :action ExtractMethod<CR>
+let g:WhichKeyDesc_ExtractInterface = "<leader>lI Extract Interface"
+nmap <leader>lI :action ExtractInterface<CR>
+let g:WhichKeyDesc_EncapsulateFields = "<leader>lf Encapsulate Fields"
+nmap <leader>lf :action EncapsulateFields<CR>
+let g:WhichKeyDesc_ReplaceMethodWithMethodObject = "<leader>lo Replace Method With Method Object"
+nmap <leader>lo :action ReplaceMethodWithMethodObject<CR>
+let g:WhichKeyDesc_IntroduceVariable = "<leader>lv Introduce Variable"
+nmap <leader>lv :action IntroduceVariable<CR>
+let g:WhichKeyDesc_IntroduceConstant = "<leader>lC Introduce Constant"
+nmap <leader>lC :action IntroduceConstant<CR>
+let g:WhichKeyDesc_IntroduceParameter = "<leader>lp Introduce Parameter"
+nmap <leader>lp :action IntroduceParameter<CR>
+let g:WhichKeyDesc_IntroduceField = "<leader>lF Introduce Field"
+nmap <leader>lF :action IntroduceField<CR>
+let g:WhichKeyDesc_IntroduceParameterObject = "<leader>lP Introduce Parameter Object"
+nmap <leader>lP :action IntroduceParameterObject<CR>
+let g:WhichKeyDesc_MemberPushDown = "<leader>ld Member Push Down"
+nmap <leader>ld :action MemberPushDown<CR>
+let g:WhichKeyDesc_MembersPullUp = "<leader>lu Members Pull Up"
+nmap <leader>lu :action MembersPullUp<CR>
+let g:WhichKeyDesc_RenameFile = "<leader>lR Rename File"
+nmap <leader>lR :action RenameFile<CR>
+let g:WhichKeyDesc_ChangeSignature = "<leader>ls Change Signature"
+nmap <leader>ls :action ChangeSignature<CR>
+let g:WhichKeyDesc_AnonymousToInner = "<leader>lA Anonymous To Inner"
+nmap <leader>lA :action AnonymousToInner<CR>
+
+" Jump
+let g:WhichKeyDesc_Jump = "<leader>j Jump"
+let g:WhichKeyDesc_SearchEverywhere = "<leader>je Search Everywhere"
+nmap <leader>je :action SearchEverywhere<CR>
+let g:WhichKeyDesc_GotoSymbol = "<leader>js Goto Symbol"
+nmap <leader>js :action GotoSymbol<CR>
+let g:WhichKeyDesc_GotoService = "<leader>ju Goto Service"
+nmap <leader>ju :action Toolkit.GotoService<CR>
+let g:WhichKeyDesc_GotoAction = "<leader>ja Goto Action"
+nmap <leader>ja :action GotoAction<CR>
+let g:WhichKeyDesc_GotoFile = "<leader>jf Goto File"
+nmap <leader>jf :action GotoFile<CR>
+let g:WhichKeyDesc_GotoTest = "<leader>jt Goto Test"
+nmap <leader>jt :action GotoTest<CR>
+let g:WhichKeyDesc_GotoClass = "<leader>jc Goto Class"
+nmap <leader>jc :action GotoClass<CR>
+let g:WhichKeyDesc_FindInPath = "<leader>jp Find In Path"
+nmap <leader>jp :action FindInPath<CR>
+let g:WhichKeyDesc_GotoNextError = "<leader>jn Next Error"
+nmap <leader>jn :action GotoNextError<CR>
+let g:WhichKeyDesc_GotoPreviousError = "<leader>jP Previous Error"
+nmap <leader>jP :action GotoPreviousError<CR>
+let g:WhichKeyDesc_GotoSuperMethod = "<leader>jg Goto Super Method"
+nmap <leader>jg :action GotoSuperMethod<CR>
+let g:WhichKeyDesc_GotoImplementation = "<leader>ji Goto Implementation"
+nmap <leader>ji :action GotoImplementation<CR>
+let g:WhichKeyDesc_JumpToLastChange = "<leader>j, Jump To Last Change"
+nmap <leader>j, :action JumpToLastChange<CR>
+let g:WhichKeyDesc_JumpToNextChange = "<leader>j; Jump To Next Change"
+nmap <leader>j; :action JumpToNextChange<CR>
+let g:WhichKeyDesc_RecentFiles = "<leader>jr Recent Files"
+nmap <leader>jr :action RecentFiles<CR>
+let g:WhichKeyDesc_RecentChangedFiles = "<leader>jR Recent Changed Files"
+nmap <leader>jR :action RecentChangedFiles<CR>
+let g:WhichKeyDesc_NextProjectWindow = "<leader>jw Next Project Window"
+nmap <leader>jw :action NextProjectWindow<CR>
+let g:WhichKeyDesc_PreviousProjectWindow = "<leader>jW Previous Project Window"
+nmap <leader>jW :action PreviousProjectWindow<CR>
+
+" Information
+let g:WhichKeyDesc_Information = "<leader>i Information"
+let g:WhichKeyDesc_ShowErrorDescription = "<leader>ie Show Error Description"
+nmap <leader>ie :action ShowErrorDescription<CR>
+let g:WhichKeyDesc_ExpressionTypeInfo = "<leader>it Expression Type Info"
+nmap <leader>it :action ExpressionTypeInfo<CR>
+let g:WhichKeyDesc_ParameterInfo = "<leader>ip Parameter Info"
+nmap <leader>ip :action ParameterInfo<CR>
+let g:WhichKeyDesc_QuickJavaDoc = "<leader>ij Quick JavaDoc"
+nmap <leader>ij :action QuickJavaDoc<CR>
+let g:WhichKeyDesc_FileStructurePopup = "<leader>if File Structure Popup"
+nmap <leader>if :action FileStructurePopup<CR>
+let g:WhichKeyDesc_ShowUmlDiagram = "<leader>is Show UML Diagram"
+nmap <leader>is :action ShowUmlDiagram<CR>
+let g:WhichKeyDesc_CallHierarchy = "<leader>ic Call Hierarchy"
+nmap <leader>ic :action CallHierarchy<CR>
+let g:WhichKeyDesc_FindUsages = "<leader>iu Find Usages"
+nmap <leader>iu :action FindUsages<CR>
+let g:WhichKeyDesc_ShowUsages = "<leader>iU Show Usages"
+nmap <leader>iU :action ShowUsages<CR>
+let g:WhichKeyDesc_MethodHierarchy = "<leader>im Method Hierarchy"
+nmap <leader>im :action MethodHierarchy<CR>
+let g:WhichKeyDesc_ShowSettings = "<leader>iS Show Settings"
+nmap <leader>iS :action ShowSettings<CR>
+let g:WhichKeyDesc_ShowProjectStructureSettings = "<leader>iP Project Structure"
+nmap <leader>iP :action ShowProjectStructureSettings<CR>
+
+" ========================
+" Visual Mode Keybindings
+" ========================
+
+" Use same Language menu as normal mode
+vmap <leader>lr :action RenameElement<CR>
+vmap <leader>lv :action Move<CR>
+vmap <leader>ls :action MakeStatic<CR>
+vmap <leader>lc :action ConvertToInstanceMethod<CR>
+vmap <leader>li :action Inline<CR>
+vmap <leader>lm :action ExtractMethod<CR>
+vmap <leader>lI :action ExtractInterface<CR>
+vmap <leader>lf :action EncapsulateFields<CR>
+vmap <leader>lo :action ReplaceMethodWithMethodObject<CR>
+vmap <leader>lv :action IntroduceVariable<CR>
+vmap <leader>lC :action IntroduceConstant<CR>
+vmap <leader>lp :action IntroduceParameter<CR>
+vmap <leader>lF :action IntroduceField<CR>
+vmap <leader>lP :action IntroduceParameterObject<CR>
+vmap <leader>ld :action MemberPushDown<CR>
+vmap <leader>lu :action MembersPullUp<CR>
+vmap <leader>lR :action RenameFile<CR>
+vmap <leader>ls :action ChangeSignature<CR>
+vmap <leader>lA :action AnonymousToInner<CR>
+
