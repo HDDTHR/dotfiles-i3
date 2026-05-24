@@ -1,0 +1,3 @@
+bindsym KP_Prior exec --no-startup-id brightnessctl set +10%
+bindsym KP_Up exec --no-startup-id brightnessctl set 10%-
+
