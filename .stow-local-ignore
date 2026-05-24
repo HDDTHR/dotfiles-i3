@@ -5,5 +5,3 @@ README.md
 \.git
 \.gitignore
 \.gitmodules
-Documents/**/*.md
-Documents/**/workspace.json
